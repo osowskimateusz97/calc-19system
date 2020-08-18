@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="calculator container col-sm-12 col-md-4">
+      <div class="output row">
+        <div data-previous-operand class="col previous-operand"></div>
+        <div data-current-operand class="col current-operand"></div>
+      </div>
+      <div class="row">
+        <button
+          class="col btn btn-warning"
+          type="button"
+          data-all-clear
+          class="span-two"
+        >
+          AC
+        </button>
+        <button class="col btn btn-danger" type="button" data-delete>
+          DEL
+        </button>
+        <button class="col btn btn-success" type="button" data-equals>
+          =
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-outline-success" type="button" data-number>
+          A
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          B
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          C
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-outline-success" type="button" data-number>
+          D
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          E
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          F
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-outline-success" type="button" data-number>
+          G
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          H
+        </button>
+        <button class="col btn btn-outline-success" type="button" data-number>
+          I
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-secondary" type="button" data-number>
+          1
+        </button>
+        <button class="col btn btn-secondary" type="button" data-number>
+          2
+        </button>
+        <button class="col btn btn-secondary" type="button" data-number>
+          3
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-secondary" type="button" data-number>
+          4
+        </button>
+        <button class="col btn btn-secondary" type="button" data-number>
+          5
+        </button>
+
+        <button class="col btn btn-secondary" type="button" data-number>
+          6
+        </button>
+      </div>
+      <div class="row">
+        <button class="col btn btn-secondary" type="button" data-number>
+          7
+        </button>
+        <button class="col btn btn-secondary" type="button" data-number>
+          8
+        </button>
+        <button class="col btn btn-secondary" type="button" data-number>
+          9
+        </button>
+      </div>
+      <div class="row">
+        <button
+          class="col operator btn btn-outline-primary"
+          type="button"
+          data-operation
+        >
+          +
+        </button>
+        <button class="col btn btn btn-secondary" type="button" data-number>
+          0
+        </button>
+
+        <button
+          class="col operator btn btn-outline-primary"
+          type="button"
+          data-operation
+        >
+          -
+        </button>
+      </div>
+      <div class="row">
+        <button
+          class="col operator btn btn-outline-primary"
+          type="button"
+          data-operation
+        >
+          *
+        </button>
+        <button
+          class="col operator btn btn-outline-primary"
+          type="button"
+          data-operation
+        >
+          ÷
+        </button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
