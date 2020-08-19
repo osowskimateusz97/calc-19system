@@ -80,10 +80,6 @@ const operationButtons = document.querySelectorAll("[data-operation]");
 const equalsButton = document.querySelector("[data-equals]");
 const deleteButton = document.querySelector("[data-delete]");
 const allClearButton = document.querySelector("[data-all-clear]");
-const previousEl = document.querySelector("[data-previous]");
-const currentEl = document.querySelector("[data-current]");
-
-const calculator = new Calculator(previousEl, currentEl);
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
