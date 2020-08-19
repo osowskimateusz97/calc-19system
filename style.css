@@ -7,6 +7,10 @@
 }
 body {
   background: url(pattern.jpg) no-repeat;
+  height: 100vh;
+}
+.calculator {
+  margin-top: 20px;
 }
 .output {
   background-color: rgb(88, 212, 115);

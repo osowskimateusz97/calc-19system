@@ -1,22 +1,21 @@
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
-    this.previousOperandTextElement = previousOperandTextElement;
+    this.previousOperandEl = previousOperandTextElement;
     this.currentOperandTextElement = currentOperandTextElement;
     this.clear();
   }
-
+  //clear store
   clear() {
     this.currentOperand = "";
     this.previousOperand = "";
     this.operation = undefined;
   }
-
+  //delete last number
   delete() {
     this.currentOperand = this.currentOperand.toString().slice(0, -1);
   }
 
   appendNumber(number) {
-    if (number === "." && this.currentOperand.includes(".")) return;
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
 
@@ -32,6 +31,7 @@ class Calculator {
 
   compute() {
     let computation;
+    //parse number to 19  decimal system
     const prev = parseInt(this.previousOperand, 19);
     const current = parseInt(this.currentOperand, 19);
 
@@ -66,11 +66,11 @@ class Calculator {
       this.currentOperand
     );
     if (this.operation != null) {
-      this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
+      this.previousOperandEl.innerText = `${this.getDisplayNumber(
         this.previousOperand
       )} ${this.operation}`;
     } else {
-      this.previousOperandTextElement.innerText = "";
+      this.previousOperandEl.innerText = "";
     }
   }
 }
