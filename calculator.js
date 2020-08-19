@@ -14,7 +14,7 @@ class Calculator {
   delete() {
     this.currentOperand = this.currentOperand.toString().slice(0, -1);
   }
-
+  //apennd number to result bar
   appendNumber(number) {
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
@@ -28,7 +28,7 @@ class Calculator {
     this.previousOperand = this.currentOperand;
     this.currentOperand = "";
   }
-
+  //compute operation
   compute() {
     let computation;
     //parse number to 19  decimal system
@@ -55,12 +55,12 @@ class Calculator {
     this.operation = undefined;
     this.previousOperand = "";
   }
-
+  //get number to display
   getDisplayNumber(number) {
     const stringNumber = number.toString();
     return stringNumber;
   }
-
+  //update DOM
   updateDisplay() {
     this.currentOperandEl.innerText = this.getDisplayNumber(
       this.currentOperand
